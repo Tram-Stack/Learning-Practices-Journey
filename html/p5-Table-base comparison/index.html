@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laptop Comparison</title>
+        <style>
+            table {
+                border: 6px double black;
+                border-collapse: collapse ;
+                width: 100%;
+                max-width: 600px;
+            }
+
+            th, td {
+            border: 1px double black; /* Tạo đường viền đơn nét mảnh màu đen */
+            padding: 8px;            /* Thêm khoảng trống giúp chữ không dính sát vào viền */
+            text-align: left;        /* Căn lề trái cho chữ */
+}
+            /* 1. Đổi từ #caption thành caption để định dạng trực tiếp cho thẻ HTML */
+            caption {
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 18px;
+                font-size: 16px;
+                color: black; /* Đảm bảo màu chữ hiển thị rõ ràng */
+            }
+
+            /* Thêm một chút khoảng cách đệm bên trong các ô để bảng dễ nhìn hơn */
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Laptop Comparison Table</h1>
+        <p>Here's a quick comparison of three popular laptops based on key features</p>
+
+        <h2>Specs Table</h2>
+
+        <!-- Thẻ <p id="caption"> cũ đã được xóa ở đây -->
+        
+        <table>
+            <!-- 2. Đưa dòng chữ vào ĐẦU bảng và dùng thẻ <caption> -->
+            <caption>Top laptops for 2025</caption>
+            
+            <tr>
+                <th>Models</th>
+                <th>Processor</th>
+                <th>RAM</th>
+                <th>Storage</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>MacBook Air M3</td>
+                <td>Apple M3</td>
+                <td>8 GB</td>
+                <td>256 GB SSD</td>
+                <td>$1.099</td>
+            </tr>
+
+            <tr>
+                <td>Dell XPS 13</td>
+                <td>Intel i7</td>
+                <td>16 GB</td>
+                <td>512 GB SSD</td>
+                <td>$1.299</td>
+            </tr>
+
+            <tr>
+                <td>Lenovo ThinkPad X1</td>
+                <td>Intel i5</td>
+                <td>16 GB</td>
+                <td>1 TB SSD</td>
+                <td>$1.399</td>
+            </tr>
+        </table>
+        <br>
+
+        <footer>
+            &copy; Copyright2026
+        </footer>
+
+    </body>
+</html>
